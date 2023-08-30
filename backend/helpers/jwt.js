@@ -6,7 +6,7 @@ const criarToken = () => {
     username: 'usuario123'
   };
 
-  const SECRET_KEY = process.env.SECRET_KEY || 'seuSegredo';
+  const SECRET_KEY = process.env.SECRET_KEY 
   return jwt.sign(payload, SECRET_KEY);
 }
 
